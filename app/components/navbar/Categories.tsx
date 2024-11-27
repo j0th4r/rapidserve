@@ -2,44 +2,32 @@
 
 import Container from "../Container";
 
-import { MdOutdoorGrill, MdFamilyRestroom, MdDeck, MdLocalBar, MdPets, MdSportsBar, MdRestaurant } from 'react-icons/md';
-import { FaGuitar, FaWineGlass, FaMoon, FaHeart } from 'react-icons/fa';
+import { MdOutdoorGrill, MdFamilyRestroom, MdDeck, MdSportsBar, MdRestaurant } from 'react-icons/md';
+import { FaWineGlass, FaHeart } from 'react-icons/fa';
 import { GiSprout, GiCook } from 'react-icons/gi';
-import { BsBriefcase } from 'react-icons/bs';
-import { BiDrink } from 'react-icons/bi';
 import CategoryBox from "../CategoryBox";
 import { usePathname, useSearchParams } from "next/navigation";
 
 export const categories = [
   {
-    label: "Outdoor Seating",
+    label: "Outdoor",
     icon: MdOutdoorGrill,
     description: "Restaurant offers outdoor dining space"
   },
   {
-    label: "Live Music",
-    icon: FaGuitar,
-    description: "Features live music performances"
-  },
-  {
-    label: "Fine Wine",
+    label: "Wine",
     icon: FaWineGlass,
     description: "Extensive wine selection available"
   },
   {
-    label: "Vegan Friendly",
+    label: "Vegan",
     icon: GiSprout,
     description: "Offers vegan menu items"
   },
   {
-    label: "Family Friendly",
+    label: "Family",
     icon: MdFamilyRestroom,
     description: "Welcomes families with children"
-  },
-  {
-    label: "Late Night",
-    icon: FaMoon,
-    description: "Open late for dining"
   },
   {
     label: "Rooftop",
@@ -47,24 +35,9 @@ export const categories = [
     description: "Rooftop dining space available"
   },
   {
-    label: "Chef's Special",
+    label: "Chef",
     icon: GiCook,
     description: "Exclusive chef's table experience"
-  },
-  {
-    label: "Full Bar",
-    icon: MdLocalBar,
-    description: "Dedicated bar space with cocktails"
-  },
-  {
-    label: "Business Ready",
-    icon: BsBriefcase,
-    description: "Suitable for business meetings"
-  },
-  {
-    label: "Pet Friendly",
-    icon: MdPets,
-    description: "Welcomes pets in outdoor areas"
   },
   {
     label: "Romantic",
@@ -72,12 +45,7 @@ export const categories = [
     description: "Perfect for date night"
   },
   {
-    label: "Happy Hour",
-    icon: BiDrink,
-    description: "Features happy hour specials"
-  },
-  {
-    label: "Sports Bar",
+    label: "Bar",
     icon: MdSportsBar,
     description: "Multiple TVs for sports viewing"
   },
